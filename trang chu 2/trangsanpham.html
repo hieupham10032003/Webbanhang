@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping-cart</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="sanpham.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="img-nav">
+                <img src="logo.png" alt="" />
+            </div>
+            <div class="content-nav">
+                <ul>
+                    <li><a href="trangchu.html">Trang Chủ</a></li>
+                    <li><a href="trangsanpham.html">Sản Phẩm</a></li>
+                    <li><a href="lienhe.html">Liên Hệ</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="signup.html">Đăng nhập </a></li>
+                </ul>
+                <form>
+                    <input type="text" id="menu__search" placeholder="Tìm kiếm sản phẩm..."\>
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <!-- The Modal -->
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                            <div class="cart-row">
+                            <div class="cart-item cart-column">
+                                <img class="cart-item-image" src="Giaynangdong.png">
+                                <span class="cart-item-title">Giày năng động </span>
+                            </div>
+                            <span class="cart-price cart-column">149000đ</span>
+                            <div class="cart-quantity cart-column">
+                                <input class="cart-quantity-input" type="number" value="1">
+                                <button class="btn btn-danger" type="button">Xóa</button>
+                            </div>
+                        </div>
+                        <div class="cart-row">
+                            <div class="cart-item cart-column">
+                                <img class="cart-item-image" src="Giaythethaonamnu.png">
+                                <span class="cart-item-title">Giày thể thao nam nữ</span>
+                            </div>
+                            <span class="cart-price cart-column">355000đ</span>
+                            <div class="cart-quantity cart-column">
+                                <input class="cart-quantity-input" type="number" value="2">
+                                <button class="btn btn-danger" type="button">Xóa</button>
+                            </div>
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">504000VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order"><a href="thanhtoan.html">Thanh toán  </a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!------------------------------------------ sản phẩm -------------------------------------------------- -->
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="Giaynangdong.png"
+                            alt="">
+                    </div>
+                    <div class="content-product1">
+                        <h3><a href="trangchitiet1.html">Giày năng động </a></h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">149000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="Giaythethaonamnu.png"
+                            alt="">
+                    </div>
+                    <div class="content-product2">
+                        <h3><a href="trangchitiet2.html">Giày thể thao nam nữ </a></h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">355000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="Giayairforce.png"
+                            alt="">
+                    </div>
+                    <div class="content-product3">
+                        <h3 class="content-product-h3">Giày air force </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">223000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="Giayjordan.png"
+                            alt="">
+                    </div>
+                    <div class="content-product4">
+                        <h3 class="content-product-h3">Giày jordan
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">630000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="Giaybanhmi.png"
+                            alt="">
+                    </div>
+                    <div class="content-product5">
+                        <h3 class="content-product-h3">Giày sneaker đế bánh mì </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">119000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="Giayjordan.png"
+                            alt="">
+                    </div>
+                    <div class="content-product6">
+                        <h3 class="content-product-h3">Giày jordan
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">630000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="Giaythethaonamnu.png"
+                            alt="">
+                    </div>
+                    <div class="content-product7">
+                        <h3 class="content-product-h3">Giày thể thao nam nữ </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">355000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+    <script src="modal.js"></script>
+</body>
+</html>

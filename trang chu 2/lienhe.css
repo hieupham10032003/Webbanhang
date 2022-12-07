@@ -1,0 +1,151 @@
+body {
+  background-color: #f5f8ff;
+}
+nav {
+  padding: px;
+  width: 100%;
+  display: flex;
+  background: #f7f6f3;
+}
+#logo img{height: 80px;
+  width: 90%;
+  margin-top: 5px; 
+  float: left;
+}
+
+nav .content-nav {
+  display: flex;
+  line-height: 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+nav .content-nav ul {
+  display: flex;
+}
+
+nav .content-nav ul li a {
+  text-decoration: none;
+  color: #43433e;
+  text-transform: uppercase;
+  padding: 0 15px;
+  font-weight: 800;
+}
+
+nav .content-nav ul li a:hover {
+  color: #fff;
+}
+
+.content-nav form {
+  position: relative;
+}
+
+.content-nav form input {
+  border: none;
+  background: #fff;
+  padding: 7px;
+  outline: none;
+  border-radius: 12px;
+}
+
+.content-nav form button {
+  padding: 5px;
+  border-radius: 12px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  border: none;
+  outline: none;
+  background: #fff;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    height:auto;
+  }
+  #search-container {
+    margin: 1em 0;
+  }
+  #search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+  }
+  #search-container input:focus {
+    border-bottom-color: #6759ff;
+  }
+  #search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #6759ff;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+  }
+  .button-value {
+    border: 2px solid #6759ff;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #6759ff;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #6759ff;
+    color: #ffffff;
+  }
+  li{
+    size: 20px;
+   color: black;
+   float: left;
+  }
+  h1{
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+  }
+  h2{
+    text-align: center;
+    color: blue;
+    }
+  h3 {
+  color: rgb(114, 249, 139);
+  }
+  table {
+    border: 1px solid black;
+   
+  }
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  button{
+      background-color: darkorange;
+  }
+  .button1 {background-color:darkorange;
+  
+  }
+  #head{ background:darkorange}
+  #logo img{height: 30px;
+    margin-top: 5px; float: left; border-right: 1px solid white}
+    ul li{ list-style: none;}
+  .clearfix:after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0;
+  }
